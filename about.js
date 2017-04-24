@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
   Linking,
   StyleSheet,
   Text,
@@ -53,9 +52,9 @@ const styles = StyleSheet.create({
   },
   link: {
     color: '#00ced1',
-    fontWeight: 'normal',
-    fontSize: 30,
     fontFamily: 'hoefler text',
+    fontSize: 30,
+    fontWeight: 'normal',
     lineHeight: 35,
     textAlign: 'center',
     textDecorationLine: 'underline',
@@ -68,9 +67,9 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#00ced1',
-    fontWeight: 'normal',
-    fontSize: 30,
     fontFamily: 'hoefler text',
+    fontSize: 30,
+    fontWeight: 'normal',
     lineHeight: 35,
     textAlign: 'center',
   },

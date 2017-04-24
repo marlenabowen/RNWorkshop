@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  Image,
   Navigator,
   StyleSheet,
   Text,
@@ -12,9 +11,6 @@ import Home from './home.js';
 import About from './about';
 
 export default class AboutMe extends Component {
-  constructor() {
-    super()
-  }
   render() {
     return (
       <Navigator
@@ -80,17 +76,17 @@ const styles = StyleSheet.create({
   button: {
     color: '#00ced1',
     fontFamily: 'avenir next',
-    fontWeight: 'normal',
     fontSize: 20,
+    fontWeight: 'normal',
+    marginTop: 20,
     paddingLeft: 10,
     paddingRight: 10,
-    marginTop: 20,
   },
   title: {
     color: '#00ced1',
     fontFamily: 'avenir next',
-    fontWeight: 'bold',
     fontSize: 30,
+    fontWeight: 'bold',
     marginTop: 15,
     textDecorationLine: 'underline',
   },

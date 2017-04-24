@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
   Image,
   StyleSheet,
   Text,
@@ -33,18 +32,18 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
     paddingRight: 15,
   },
-  title: {
-    color: '#00ced1',
-    fontWeight: 'bold',
-    fontSize: 30,
-    fontFamily: 'hoefler text',
-    marginTop: 40,
-    textAlign: 'center',
-  },
   headShot: {
     borderColor: '#00ced1',
     borderWidth: 5,
     height: 300,
     width: 300,
+  },
+  title: {
+    color: '#00ced1',
+    fontFamily: 'hoefler text',
+    fontSize: 30,
+    fontWeight: 'bold',
+    marginTop: 40,
+    textAlign: 'center',
   },
 });
