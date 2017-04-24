@@ -7,7 +7,7 @@ import {
   TouchableHighlight,
   View,
 } from 'react-native';
-import Home from './home.js';
+import Home from './home';
 import About from './about';
 
 export default class AboutMe extends Component {
@@ -48,7 +48,7 @@ export default class AboutMe extends Component {
               Title: (route, navigator, index, navState) => {
                 if (route.screen == 'Home') {
                   return (
-                    <Text style={styles.title}>Welcome</Text>
+                    <Text style={styles.title}>Hello!</Text>
                   );
                 } else {
                   return (

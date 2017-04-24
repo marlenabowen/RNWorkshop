@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  Image,
   Navigator,
   StyleSheet,
   Text,
@@ -12,9 +11,6 @@ import Home from './home.js';
 import About from './about';
 
 export default class AboutMe extends Component {
-  constructor() {
-    super()
-  }
   render() {
     return (
       <Navigator
@@ -22,6 +18,7 @@ export default class AboutMe extends Component {
         renderScene={(route, nav) => {return this.renderScene(route, nav)}}
         navigationBar={
           <Navigator.NavigationBar
+            navigationStyles={Navigator.NavigationBar.StylesIOS}
             routeMapper={{
               LeftButton: (route, navigator, index, navState) => {
                 if (route.screen === 'Home') {
@@ -84,14 +81,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     paddingLeft: 10,
     paddingRight: 10,
-    marginTop: 20,
   },
   title: {
     color: '#00ced1',
     fontFamily: 'avenir next',
     fontWeight: 'bold',
     fontSize: 30,
-    marginTop: 15,
     textDecorationLine: 'underline',
   },
 });
