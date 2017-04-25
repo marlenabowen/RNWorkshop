@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 import Home from './home.js';
-import About from './about';
+import About from './about.js';
 
 export default class AboutMe extends Component {
   render() {
@@ -26,7 +26,7 @@ export default class AboutMe extends Component {
                 } else {
                   return (
                     <View>
-                      <TouchableHighlight onPress ={() => navigator.pop()}>
+                      <TouchableHighlight onPress={() => navigator.pop()}>
                         <Text style={styles.button}>Back</Text>
                       </TouchableHighlight>
                     </View>
@@ -39,7 +39,7 @@ export default class AboutMe extends Component {
                 } else {
                   return (
                     <View>
-                      <TouchableHighlight onPress ={() => navigator.push({screen:'About'})}>
+                      <TouchableHighlight onPress={() => navigator.push({screen:'About'})}>
                         <Text style={styles.button}>Next</Text>
                       </TouchableHighlight>
                     </View>
